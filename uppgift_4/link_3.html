@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tabeller</title>
+    <style>
+        body{
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        .tabellen {
+            width: 700px;
+        }
+
+        .tabellen td, .tabellen th {
+            border: solid 1px black;
+        }
+
+        .tabellen thead th {
+            height:150px;
+        }
+
+        .tabellen tbody td {
+            width: 150px;
+            height:700px;
+            background-color:  #C0C0C0;
+        }
+
+        .tabellen tbody td.main {
+            width: 400px;
+            background-color: #fff;
+        }
+
+        .tabellen tfoot td {
+            height:75px;
+            background-color: #C0C0C0;
+        }
+    </style>
+</head>
+<body>
+
+<table class='tabellen'>
+    <thead>
+    <tr>
+        <th colspan='3'>
+            <img src="drops700x150.gif">
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <ul>
+                <li><a href="uppgift_4.html">Home</a></li>
+                <li><a href="link_1.html">Intern länk 1</a></li>
+                <li><a href="link_2.html">Intern länk 2</a></li>
+                <li><a href="link_3.html">Intern länk 3</a></li>
+            </ul>
+        </td>
+        <td class='main'>Det här är tredje sidan på min hemsida</td>
+        <td>SnyggaHemsidor AB<br> Adress: Sollentunavägen 123<br>68 457 Sollentuna</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan='3'>Telefon: 0765558812 E-post: info@snyggahemsidor.se &copy; 2010</td>
+    </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

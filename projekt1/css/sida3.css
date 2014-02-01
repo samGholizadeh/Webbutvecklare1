@@ -1,0 +1,21 @@
+#article{
+	height:100%;
+	overflow:auto;
+}
+table{
+	position:relative;
+	width:90%;
+	margin:auto;
+	margin-top:10%;
+}
+th{
+	text-align:left;
+	padding-bottom:10px;
+}
+td{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+tr:nth-child(even){
+	background-color:rgba(0,0,0,0.1);
+}

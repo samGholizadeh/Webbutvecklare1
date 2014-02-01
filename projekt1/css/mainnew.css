@@ -1,0 +1,169 @@
+*{
+	outline:none;
+	margin:0;
+	padding:0;
+	font-family:verdana,georgia;
+}
+body{
+	position:absolute;
+	background-color:#003D38;
+	height:100%;
+	width:100%;
+	background-image:url("tire.png");
+	background-repeat:repeat-y;
+}
+#wrapper{
+	position:relative;
+	width:80%;
+	left:10%;
+	height:100%;
+	background-color:#1D7373;
+	box-shadow: 0px 0px 45px #000000;
+}
+#wrapper header{
+	position:relative;
+	background-color:#006363;
+	left:0%;
+	height:10%;
+	width:100%;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+#wrapper #logga{
+	position:absolute;
+	width:108px;
+	left:5px;
+	top:5px;
+}
+#wrapper header nav{
+	position:absolute;
+	width:60%;
+	left:20%;
+	bottom:0%;
+	height:22px;
+}
+#wrapper ul{
+	position:absolute;
+	width:100%;
+	list-style-type: none;
+	bottom:0%;
+}
+#wrapper ul li{
+	position:relative;
+	display:inline-block;
+	float:left;
+	width: 19.5%;
+	text-align:center; 
+	background: rgb(53,53,53);
+	background: -moz-linear-gradient(top, rgba(53,53,53,1) 2%, rgba(29,115,115,1) 38%, rgba(29,115,115,1) 66%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,rgba(53,53,53,1)), color-stop(38%,rgba(29,115,115,1)), color-stop(66%,rgba(29,115,115,1))); 
+	background: -webkit-linear-gradient(top, rgba(53,53,53,1) 2%,rgba(29,115,115,1) 38%,rgba(29,115,115,1) 66%); 
+	background: -o-linear-gradient(top, rgba(53,53,53,1) 2%,rgba(29,115,115,1) 38%,rgba(29,115,115,1) 66%); 
+	background: -ms-linear-gradient(top, rgba(53,53,53,1) 2%,rgba(29,115,115,1) 38%,rgba(29,115,115,1) 66%); 
+	background: linear-gradient(to bottom, rgba(53,53,53,1) 2%,rgba(29,115,115,1) 38%,rgba(29,115,115,1) 66%); 
+	color:white;
+	border-right:1px solid white;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+#wrapper ul li:first-child{
+	border-top-left-radius:20px;
+}
+#wrapper ul li:last-child{
+	border-top-right-radius:20px;
+	border:none;
+}
+#wrapper ul .active{
+	box-shadow: 0px 0px 15px #FFFFFF;
+	color:white;
+}
+#wrapper ul li:hover{
+	box-shadow: 0px -10px 10px #003D38;
+	cursor:pointer;
+	font-weight:bold;
+}
+#wrapper ul .active:hover{
+	box-shadow: 0px 0px 15px #FFFFFF;
+	font-weight:normal;
+}
+#wrapper ul li .links{
+	position:absolute;
+	display:block;
+	width:100%;
+	height:22px;
+}
+#content{
+	position:relative;
+	overflow:auto;
+	width:50%;
+	height:55%;
+	margin-left:3%;
+	top:9%;
+	padding:3%;
+	border-bottom-left-radius:30px;
+	border-top-left-radius:30px;
+	box-shadow: 0px 0px 5px #FFFFFF;
+	background-color:#91BDC2; /*GLÖM INTE TA BORT DUBLETTER*/
+}
+#content p{
+	margin-top:10px;
+	font-size:0.9em;
+}
+#content p a:link{
+	color:blue;
+}
+#content p a:visited{
+	color:white;
+	font-weight:bold;
+}
+#aside{
+	position:absolute;
+	height:66%;
+	top:19%;
+	left:67%;
+	width:30%;
+}
+#article{
+	position:relative;
+	height:45%;
+	width:100%;
+	box-shadow: 0px 0px 5px #FFFFFF;
+	border-radius:15px;
+	background-color:#91BDC2;
+}
+.article-content{
+	padding-left:5%;
+	padding-top:15px;
+}
+#banner{
+	position:relative;
+	top:10%;
+	height:45%;
+	width:100%;
+	box-shadow: 0px 0px 5px #FFFFFF;
+	border-radius:15px;
+	background-color:#91BDC2;/*GLÖM INTE TA BORT DUBLETTER""*/
+}
+#banner h4{
+	text-align:center;
+}
+#bannerpic{
+	position:absolute;
+	width:80%;
+	left:10%;
+	bottom:12%;
+}
+
+#wrapper footer{
+	position:absolute;
+	bottom:0%;
+	background-color:#006363;
+	height:5%;
+	width:100%;
+	text-align:center;
+	color:white;
+}
+footer p{
+	position:relative;
+	top:7%;
+}

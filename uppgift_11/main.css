@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+        body{
+            background-color: #dca7a7;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding-left: 20%;
+        }
+        #yttreYta{
+            left: 20%;
+            width: 60%;
+            height: 100%;
+            border: 1px solid black;
+        }
+        #innehall{
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+        header{
+            background-color: #2aabd2;
+            padding: 30px;
+        }
+        #meny{
+            background-color: #bce8f1;
+            width: 30%;
+            height: 100%;
+            display: inline-block;
+        }
+        #meny li{
+            width: 97%;
+            height: 45px;
+            background-color: #d58512;
+            list-style: none;
+            margin: 3px;
+            padding-top: 10px;
+        }
+        #meny li a{
+            padding-top: 40px;
+            padding-left: 10px;
+        }
+        #meny ul{
+            padding: 0px;
+        }
+        #innreInnehall{
+            position: absolute;
+            background-color: white;
+            margin: 0px;
+            height: 400px;
+            display: inline-block;
+
+        }
+        #innreInnehall p{
+            padding: 5px;
+        }
+        footer{
+            text-align: center;
+            background-color: #2aabd2;
+            width: 100%;
+            height: 10%;
+        }
+		p {
+			font-family:Verdana, Geneva, sans-serif
+		}

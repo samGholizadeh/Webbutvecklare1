@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html"><img src="img/logo.png" alt="logo" style="width: 40px; height: 40px;"><b>Allt om datorer AB</b></a>
+                </li>
+            <li><a href="computers.html"><b>Datorer</b></a></li>
+            <li><a href="about.html"><b>Om oss</b></a></li>
+            <li class="active"><a href="contact.html"><b>Kontakt</b></a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<div id="wrapper">
+
+    <div id="content">
+        <h1><b>Kontakt</b></h1>
+        <p>Fyll i dina uppgifter och ditt meddelande i formuläret
+        så kommer vi återkomma så forst som möjligt.</p>
+        <form id="form" action="contact.php" method="post">
+            <input type="text" name="firstname" placeholder="Förnamn"><br>
+            <input type="text" name="lastname" placeholder="Efternamn"><br>
+            <input type="text" name="number" placeholder="Telefonnummer"><br>
+            <input type="email" name="email" placeholder="E-post"><br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Chrome">Chrome</option>
+                <option value="Explorer">Explorer</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Opera">Opera</option>
+            </datalist>
+            <textarea cols="50" rows="10" placeholder="Meddelande"></textarea>
+            <input type="submit" value="Skicka">
+        </form><br>
+        <embed height="80" width="400" src="sound/Audioslave%20-%20Show%20Me%20How%20to%20Live.mp3">
+        <br>
+
+        <p><b>Allt om datorer AB. Kontakt: Tel: 08 - 88 88 88 E-post: info@aodab.se Adress: Adressvägen 1, 12345 Stad &bull; Copyright © 2013 Allt om datorer AB</b></p>
+    </div>
+
+    <div id="banner">
+        <img src="img/dell.jpg" alt="Reklam banner">
+    </div>
+
+</div>
+
+</body>
+
+</html>

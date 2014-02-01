@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Testar Javascript</title>
+    <script>
+        abc=0
+
+        //***---Här bestämmer du hur många tecken som fältet ska rymmas.
+        size="60"
+
+        //***---Gör så många mellanrum som det ska vara räknat från fältets vänstra del till där scriptet ska börja rulla (många föredrar att inte ha några mellanslag alls).
+        mellanrum="    "
+
+        //***---Hur många tecken ska visas samtidigt. Om du väljer få tecken så används bara en liten del av fältet.
+        syns=40
+
+        //***---Ange hur snabbt scripetet ska gå. Ha ett lågt värde om du vill att det ska rulla fort.
+        hastighet=100
+
+        //***---Man kan ändra textfärgen för dem som har Internet Explorer. Ange textfärgen (det engelska namnet på färgen). (Netscape har alltid svart textfärg)
+        textfarg="blue"
+
+        //***---Man kan ändra fältets färg för dem som har Internet Explorer. Ange fältets färg (det engelska namnet på färgen). (Netscape har alltid ett vitt fält)
+        bakgrundsfarg="silver"
+
+
+
+        farg_tillagg="";
+        if (navigator.appName=="Microsoft Internet Explorer")
+        {
+            farg_tillagg=" STYLE='color: "+textfarg+"; background-color: "+bakgrundsfarg+"' ";
+        }
+
+        formtext="<FORM NAME='detta'><INPUT TYPE='text' "+farg_tillagg+" NAME='formular' SIZE='"+size+"'></FORM>"
+
+        function rulla(txt)
+        {
+            visa_detta=txt.substring(abc-syns,abc)
+            abc++
+            document.detta.formular.value=mellanrum+visa_detta
+            if (eval(abc-syns)>=txt.length)
+            {
+                abc=0
+            }
+            setTimeout("rulla('"+txt+"')",hastighet)
+        }
+
+        function ha_ett_falt_har(txt)
+        {
+            document.write(formtext)
+            rulla(txt);
+        }
+        //-->
+    </script>
+</head>
+<body>
+
+<SCRIPT LANGUAGE="javascript">
+    <!--
+    ha_ett_falt_har("Här kommer en rullande text.    Du kan skriva hur långa meddelanden du vill här!!!");
+    //-->
+</SCRIPT>
+
+</body>
+</html>

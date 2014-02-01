@@ -1,0 +1,10 @@
+#article{
+	height:100%;
+	overflow:auto;
+}
+#content img{
+	width:100%;
+}
+#content{
+	overflow:hidden;
+}
